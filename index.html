@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập tuần 8</title>
+    <link rel="stylesheet" href="./bootstrap-4.6.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>   
+  </head>
+  
+  <body>
+    <div class="container">
+      <div id="picture">
+        <img style="width: 100%" src="./IMG/banner.png">
+      </div>
+      <div class="btn">
+        <button class="option"><a href="#"></a> Trang chủ</button>
+        <button class="option" id="open-modal">Đặt lịch</button>
+      </div>
+      <table class="table">
+        <tr>
+          <th>STT</th>
+          <th>Mã bệnh nhân</th>
+          <th>Mật khẩu</th>
+          <th>Ngày khám</th>
+          <th>Phụ thu dịch vụ</th>
+          <th>Chuyên khoa</th>
+        </tr>
+        <tbody id="tbody"></tbody>
+      </table>
+      <footer class="col-12">
+        <h3>21002875_Lê Vân Huyền</h3>
+      </footer>
+      <div id="modal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="col-11">Đặt lịch khám online</h5>
+              <button class="col-1" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+        
+            <div class="modal-body">
+              <form action="" id="form">
+                <div class="form-group">
+                  <label for="mabenhnhan"><b>Mã bệnh nhân</b></label>
+                  <input class="form-control" type="text" id="mabenhnhan" placeholder="Mã bệnh nhân">
+                  <span class="mm-ins text-danger"><i>(*)</i></span>
+                </div>
+          <div class="form-group">
+                  <label for="matkhau"><b>Mật khẩu</b></label>
+                  <input class="form-control" type="text" id="matkhau" placeholder="Mật khẩu">
+                  <span class="mk-mes text-danger"><i>(*)</i></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="ngaykham"><b>Ngày khám</b></label>
+                  <input class="form-control" type="date" id="ngaykham">
+                  <span class="nk-mes text-danger"><i>(*)</i></span>
+                </div>
+
+                <div class="form-group form-check">
+                  <label class="form-check-label"><b>Loại dịch vụ</b></label><br>
+                  <input type="checkbox" id="phuthuKhamBenh">
+                  <label for="phuthuKhamBenh">Khám bệnh theo yêu cầu</label>
+                  <input type="checkbox" id="phuthuDieuTri">
+                  <label for="phuthuDieuTri">Điều trị ngoại trú</label>
+                  <input type="checkbox" id="phuthuBacSi">
+                  <label for="phuthuBacSi">Bác sĩ theo yêu cầu</label>
+                </div>
+
+                <div class="form-group">
+                  <label><b>Chuyên khoa</b></label>
+                  <select id="chuyenkhoa" class="form-control">
+                    <option value="Ngoại tổng quát">Ngoại tổng quát</option>
+                    <option value="Nhi">Nhi</option>
+                    <option value="Nội tổng quát">Nội tổng quát</option>
+                  </select>
+                </div>
+                <button class="btn-info" id="btn-submit">Đặt lịch</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

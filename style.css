@@ -1,0 +1,9 @@
+h3{
+    text-align: center;
+    margin-top: 200px;
+}
+.option {
+    border: none;
+    color: rgb(38, 160, 222);
+    background-color: white;
+}
